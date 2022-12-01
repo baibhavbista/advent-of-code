@@ -1,0 +1,21 @@
+/target
+/classes
+/checkouts
+profiles.clj
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+/.prepl-port
+.hgignore
+.hg/
+
+# Cache for clj-kondo (linter)
+.clj-kondo/.cache
+*/.clj-kondo/.cache
+
+# Calva and LSP caches
+.lsp
+.calva
