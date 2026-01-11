@@ -10,16 +10,23 @@ This is a Clojure project containing solutions to [Advent of Code](https://adven
 
 ```
 advent-of-code/
-├── project.clj              # Leiningen project configuration
+├── project.clj              # Leiningen project configuration (Clojure)
 ├── src/
 │   └── advent_of_code/
 │       ├── core.clj         # Main entry point (minimal)
-│       └── 2022/            # Solutions organized by year
+│       └── 2022/            # Clojure solutions organized by year
 │           ├── day01.clj
 │           ├── day02.clj
 │           └── ...
+├── python/                  # Python port of all solutions
+│   ├── 2022/
+│   │   ├── day01.py
+│   │   ├── day02.py
+│   │   └── ...
+│   ├── run_all.py           # Test runner for Python solutions
+│   └── README.md
 ├── inputs/
-│   └── 2022/                # Puzzle inputs organized by year
+│   └── 2022/                # Puzzle inputs (shared by both languages)
 │       ├── day01.txt
 │       ├── day02.txt
 │       └── ...
@@ -30,6 +37,8 @@ advent-of-code/
 ```
 
 ## Build & Run Commands
+
+### Clojure
 
 ```bash
 # Run a specific day's solution (from project root)
@@ -43,6 +52,16 @@ lein test
 
 # Build uberjar
 lein uberjar
+```
+
+### Python
+
+```bash
+# Run a specific day's solution (from project root)
+python3 -m python.2022.day01
+
+# Run all solutions with verification
+python3 -m python.run_all
 ```
 
 ## Solution File Conventions
