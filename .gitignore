@@ -19,3 +19,8 @@ pom.xml.asc
 # Calva and LSP caches
 .lsp
 .calva
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
